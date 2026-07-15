@@ -1,16 +1,16 @@
 # Market Pattern Explorer
 
-**We focused on learning and understanding the behaviour of features instead of trying to make a successful model.**
+**I focused on learning and understanding the behaviour of features instead of trying to make a successful model.**
 
 This is the central philosophy of this project. We did not set out to build a production-ready trading bot or a profitable strategy. Instead, we set out to understand *why* market prediction is hard, *how* features interact, and *where* models fail. The models themselves are tools for probing the data, not the end goal.
 
 ---
 
-## What We Tried
+## What I Tried
 
-We asked a simple question: **Can historical price data and technical indicators predict whether AAPL closes higher or lower tomorrow?**
+I asked a simple question: **Can historical price data and technical indicators predict whether AAPL closes higher or lower tomorrow?**
 
-We downloaded 5 years of Apple daily OHLCV data (Jan 2020 – Dec 2024), engineered 11 technical features from scratch, formulated binary classification targets, trained 4 models of increasing complexity, backtested them, and compared everything against a simple Buy & Hold benchmark.
+I downloaded 5 years of Apple daily OHLCV data (Jan 2020 – Dec 2024), engineered 11 technical features from scratch, formulated binary classification targets, trained 4 models of increasing complexity, backtested them, and compared everything against a simple Buy & Hold benchmark.
 
 The short answer: **No, not reliably.** The best model (LSTM) achieved 45.8% accuracy — barely above a coin flip. Every ML strategy was outperformed by Buy & Hold (+37% cumulative return). But the *why* behind these failures is where the real learning lives.
 
